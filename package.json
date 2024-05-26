@@ -1,0 +1,42 @@
+{
+  "name": "projectmodule2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "concurrently \"npm run dev\" \"json-server -w mock-api/server.json -p 3000\"",
+    "server": "json-server --watch db.json -m ./node_modules/json-server-auth --port 3000",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "api": "^6.1.1",
+    "bootstrap": "^5.3.3",
+    "font-awesome-icons": "^1.6.0",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.2",
+    "react-slick": "^0.30.2",
+    "redux": "^5.0.1",
+    "sass": "^1.77.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}
